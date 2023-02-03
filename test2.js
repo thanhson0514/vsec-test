@@ -1,3 +1,8 @@
+/**
+ * Decode string
+ * @param {string} s
+ * @return {string}
+ */
 function decodeString(s) {
   const stack = [];
   let number = 0;
@@ -24,6 +29,11 @@ function decodeString(s) {
   return currStr;
 }
 
+/**
+ * The check parameter is number
+ * @param {*} str
+ * @return {boolean}
+ */
 function isNum(str) {
   return /[0-9]+/.test(str);
 }

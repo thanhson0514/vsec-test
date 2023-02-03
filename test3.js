@@ -1,3 +1,8 @@
+/**
+ * Evaluation from string to sum of number
+ * @param {string} s
+ * @return {number}
+ */
 function calculate(s) {
   s = "(" + s + ")";
   let stack = [];
@@ -23,6 +28,11 @@ function calculate(s) {
   return stack[0];
 }
 
+/**
+ * The calculation for total
+ * @param {string} temp
+ * @return {number}
+ */
 function count(temp) {
   let res = Number(temp.pop());
   while (temp.length > 0) {
@@ -35,6 +45,12 @@ function count(temp) {
   }
   return res;
 }
+
+/**
+ * The check parameter is number
+ * @param {*} str
+ * @return {boolean}
+ */
 function isNum(str) {
   return /[0-9]+/.test(str);
 }
